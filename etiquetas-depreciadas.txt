@@ -1,0 +1,23 @@
+Etiquetas depreciadas o en desuso en html:
+
+<acronym> → Deprecated
+<big> → Deprecated
+<center> → Deprecated
+<dir> → Deprecated
+<font> → Deprecated
+<frame> → Deprecated
+<frameset> → Deprecated
+<image> → Non-standardDeprecated
+<marquee> → Deprecated
+<menuitem> → Non-standardDeprecated
+<nobr> → Deprecated
+<noembed> → Deprecated
+<noframes> → Deprecated
+<param> → Deprecated
+<plaintext> → Deprecated
+<portal> → Experimental
+<rb> → Deprecated
+<rtc> → Deprecated
+<strike> → Deprecated
+<tt> → Deprecated
+<xmp> → Deprecated
