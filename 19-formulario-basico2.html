@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios - Básico 2</title>
+  <style>
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ff0000, #e6ff04, rgb(221, 20, 20));
+    }
+
+    p {
+      color-scheme: white;
+    }
+
+    .im1 {
+      display: block;
+      float: left;
+      margin-top: 5px;
+      margin-right: 10px;
+      border: 5px;
+      border-radius: 30%;
+    }
+
+    .im2 {
+      display: block;
+      float: right;
+      border: 5px;
+      border-radius: 30%;
+    }
+
+    .im3 {
+      display: block;
+      float: right;
+      border: 5px;
+      border-radius: 30%;
+    }
+
+    .label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <hr>
+  <div>
+    <h1>FORMULARIO BÁSICO 2</h1>
+    <hr><br>
+    <img class="im1" src="https://media.tenor.com/v99j-aduTkgAAAAd/mr-incredible.gif" alt="goofy ah dog 1"
+      height="200px" width="200px">
+    <form class="prueba" action="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" method="get" target="_blank">
+      SEXO →
+      <label for="hombre"><input type="radio" name="sexo" id="hombre" value="H">Hombre</label>
+      <label for="mujer"><input type="radio" name="sexo" id="mujer" value="M">Mujer</label>
+      <label for="no_binario"><input type="radio" name="sexo" id="no_binario" value="NB">No Binario</label>
+
+      <button type="submit">Enviar</button>
+      <img class="im2" src="https://media.tenor.com/kOugL3xNMoAAAAAC/incredibles-glasses.gif" alt="goofy ah dog 1"
+        height="200px" width="200px">
+    </form>
+  </div>
+  <br>
+  <hr>
+  <h3><strong>&lt;label></strong></h3>
+
+  <p>El Elemento HTML &lt;label> <u>representa una etiqueta para un elemento en una interfaz de usuario.</u>
+  <p>Este puede estar asociado con un control ya sea mediante la utilizacion del atributo for, o ubicando el control
+    dentro del elemento label. Tal control es llamado "el control etiquetado" del elemento label.</p>
+  </p>
+
+  <hr><br><br>
+  <div class="label">
+    <h4><strong>ATRIBUTOS DE &lt;label></strong></h4>
+    <ul>
+      <li>
+        <pre>for:</pre>
+        → El ID del elemento de formulario etiquetable relacionado en el mismo documento que el elemento label. <br>
+        → En nuestro caso se observa que el id del primer input es "hombre" y ese mismo valor es el que se va a
+        utilizar para el atriburto for en label. <br>
+        → Podríamos decir: asigrna una etiqueta para el id="XYZ". <br>
+        → El primer elemento en el documento con tal ID que coincida con el dispuesto en el atributo for será el
+        control etiquetado para este elemento. <br>
+      </li>
+    </ul>
+  </div>
+  <img class="im3" src="https://media.tenor.com/tRiyPSgx7bAAAAAC/incredibles-the-incredibles.gif" alt="goofy ah dog 1"
+    height="300px" width="450px">
+
+  <h3><strong>&lt;input></strong></h3>
+  <p>El elemento HTML &lt;input> se usa para crear controles interactivos para formularios basados en la web con el fin
+    de recibir datos del usuario.</p>
+
+  <strong><em>ATRIBUTOS DE &lt;input> </em></strong>
+  <ul>
+    <li>
+      <pre>id</pre>
+      → Identificador único
+    </li>
+    <li>
+      <pre>type = "radio"</pre>
+      → Tipo de control a mostrar, en este caso un radio buttno.
+    </li>
+    <li>
+      <pre>name="sexo"</pre>
+      → Es el nombre para agrupar los distintos botones del formulario que pertencen a un mismo grupo,categoría,
+      conjunto...<br>
+      → Observa en nuestro ejemplo, que los tres botones poseen este atributo identicamente.Reflejando así que
+      cualquiera
+      de estos inputs pertenecen a una categoría. <br>
+    </li>
+    <li>
+      <pre>value: </pre>
+      → Valor que recibira el servidor cuando se seleccione el input
+      → En este ejemplo el servidor recibira el string "ABD" si este input ha sido seleccionado por el ususario.
+    </li>
+  </ul>
+
+
+</body>
+
+</html>
