@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS embebed or internal</title>
+
+  <style>
+    /*Reglas*/
+    header {
+      color: green;
+      font-size: 25px;
+    }
+
+    small {
+      color: brown;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    p {
+      color: rgb(5, 158, 158);
+      font-style: italic;
+    }
+
+    /*
+    hr {
+      border-top: 3px solid red;
+    }
+
+    hr {
+      border-top: 3px dashed red;
+    }
+    Siempre se aplica la última regla
+    */
+    hr {
+      border: 3px dashed red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Internal/Embebed StyleSheet</h1>
+  <p>→ El CSS interno o embebido es el que se especifica en un bloque &lt;style> dentro del &lt;head></p>
+
+  <main>
+    <header>
+      Encabezado de la sección main
+    </header>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+      quo nesciunt eveniet eligendi placeat vel similique quae, nulla veniam nihil voluptatem distinctio vitae itaque!
+      Ut laudantium fugit nisi molestiae
+      provident. <br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autem quod voluptates vel illo. Nostrum enim doloribus harum iste,
+      pariatur nihil. Temporibus doloribus ad nobis a ipsa placeat modi ipsam, minima eum distinctio quas voluptatibus.
+      Natus, doloremque corporis. Unde. Dolor repudiandae dignissimos accusamus saepe sed suscipit, laboriosam nam sunt
+      praesentium fugiat, recusandae autem dolorem culpa quos. Molestias error, cupiditate, consequatur deserunt quas
+      excepturi doloremque, totam eaque ullam et molestiae!<br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quae unde beatae, sequi aspernatur alias, esse tenetur vel facere
+      nesciunt ab molestias rem. Perspiciatis eius
+      amet atque fugit quod quasi, quam necessitatibus voluptatum ipsam sapiente id corporis accusantium distinctio!
+      Aperiam consequuntur labore laborum, illum autem ut perferendis iste aliquid molestias quibusdam ab aut sapiente
+      earum. Ipsum esse impedit provident eos, commodi beatae maiores non magni praesentium aspernatur unde doloremque!
+      Quae, a ipsam. Temporibus nesciunt laboriosam nemo inventore ab aspernatur, cumque, pariatur soluta, earum
+      laudantium fugiat ratione? Minus enim quis, nemo fugiat odit dolorum! Dolor adipisci est culpa commodi quasi?</p>
+
+    <p style="color: black; font-weight: bold;">texto con estilo sobreescrito por un css inline</p>
+
+    <footer>
+      <hr>
+      <small>Realizado por nosotros, aquí en este curso, este año</small>
+    </footer>
+  </main>
+
+<img style="border: 15px rgb(255, 13, 13) solid; border-radius: 80%; border-style: ridge;" src="https://media.tenor.com/YsHTmCtSet8AAAAd/monkey-oleg.gif" alt="monkey-oleg.gif" width="250px">
+
+  <h3>Código: </h3>
+
+  <h4>head</h4>
+  <pre>
+    &lt;head>
+      &lt;meta charset="UTF-8">
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+      &lt;title>CSS embebed or internal&lt;/title>
+    
+      &lt;style>
+        /*Reglas*/
+        header {
+          color: green;
+          font-size: 25px;
+        }
+    
+        small {
+          color: brown;
+          font-weight: bold;
+          font-style: italic;
+        }
+    
+        footer {
+          text-align: center;
+        }
+    
+        p {
+          color: rgb(5, 158, 158);
+          font-style: italic;
+        }
+        ...
+        hr {
+          border: 3px dashed red;
+        }
+      &lt;/style>
+    &lt;/head>
+  </pre>
+
+  <h4>body</h4>
+  <pre>
+
+  &lt;h1>Internal/Embebed StyleSheet&lt;/h1>
+  &lt;p>→ El CSS interno o embebido es el que se especifica en un bloque &lt;style> dentro del &lt;head>&lt;/p>
+
+  &lt;main>
+    &lt;header>
+      Encabezado de la sección main
+    &lt;/header>
+    &lt;p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+      quo nesciunt eveniet eligendi placeat vel similique quae, nulla veniam nihil voluptatem distinctio vitae itaque!
+      Ut laudantium fugit nisi molestiae
+      provident. &lt;br>&lt;br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autem quod voluptates vel illo. Nostrum enim doloribus harum iste,
+      pariatur nihil. Temporibus doloribus ad nobis a ipsa placeat modi ipsam, minima eum distinctio quas voluptatibus.
+      Natus, doloremque corporis. Unde. Dolor repudiandae dignissimos accusamus saepe sed suscipit, laboriosam nam sunt
+      praesentium fugiat, recusandae autem dolorem culpa quos. Molestias error, cupiditate, consequatur deserunt quas
+      excepturi doloremque, totam eaque ullam et molestiae!&lt;br>&lt;br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quae unde beatae, sequi aspernatur alias, esse tenetur vel facere
+      nesciunt ab molestias rem. Perspiciatis eius
+      amet atque fugit quod quasi, quam necessitatibus voluptatum ipsam sapiente id corporis accusantium distinctio!
+      Aperiam consequuntur labore laborum, illum autem ut perferendis iste aliquid molestias quibusdam ab aut sapiente
+      earum. Ipsum esse impedit provident eos, commodi beatae maiores non magni praesentium aspernatur unde doloremque!
+      Quae, a ipsam. Temporibus nesciunt laboriosam nemo inventore ab aspernatur, cumque, pariatur soluta, earum
+      laudantium fugiat ratione? Minus enim quis, nemo fugiat odit dolorum! Dolor adipisci est culpa commodi quasi?&lt;/p>
+
+    &lt;p style="color: black; font-weight: bold;">texto con estilo sobreescrito por un css inline&lt;/p>
+
+    &lt;footer>
+      &lt;hr>
+      &lt;small>Realizado por nosotros, aquí en este curso, este año&lt;/small>
+    &lt;/footer>
+  &lt;/main>
+
+  </pre>
+
+
+</body>
+
+</html>
