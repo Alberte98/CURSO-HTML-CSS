@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    .article_1 {
+      width: 18%;
+      background-color: aqua;
+      display: block;
+      border: 5px;
+    }
+
+    img {
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 5px;
+      border-radius: 20%;
+      align-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>&lt;footer> en HTML</h1>
+  <main>
+    <p>El elemento &lt;footer> representa un pie de página para el contenido de la <u>sección ancestral más cercano
+        mas cercana</u> o del elemento raíz.</p>
+    <p>Cuando nos referimos a <strong>sección ancestral más cercana</strong>, nos estamos refiriendo
+      a la sección de jerarquía superior a la sección actual (padre)</p>
+    <p>En el siguiente ejemplo la sección ancestral mas cercana a footer es &lt;html></p>
+
+
+
+    <pre>
+      &lt;!DOCTYPE html>
+      &lt;html lang="es">
+      &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;title>Document&lt;/title>
+      &lt;/head>
+      &lt;body>
+        cuerpo del documento
+      &lt;/body>
+      &lt;footer>Pie de página&lt;/footer>
+      &lt;/html>
+    </pre>
+
+    <h1>&lt;small> en HTML</h1>
+
+    <p>Habitualmente, al texto que se muestra en &lt;footer> se le aplica la etiqueta &lt;small>...&lt;/small>,
+      que muestra su contenido mas pequeño.</p>
+
+    <!--Ejemplo para el footer de un artículo-->
+
+    <article class="article_1">
+      <header>
+        <h3>→ Para todos los monos:</h3>
+      </header>
+      <ul>
+        <li>Este artículo va dedicado a todos los vídeos de monos en baja calidad, un saludo</li>
+      </ul>
+      <img src="https://media.tenor.com/WJHbS1BMW1UAAAAd/monkey.gif" alt="monkey" width="200px">
+
+      <footer><small>Esto es el pie del artículo</small></footer>
+    </article>
+
+    <pre>
+      &lt;!DOCTYPE html>
+      &lt;html lang="es">
+      &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;title>Document&lt;/title>
+        &lt;/head>
+      &lt;body>
+        &lt;main>
+          &lt;article>
+            &lt;header>
+              &lt;h3>→ Para todos los monos:&lt;/h3>
+            &lt;/header>
+            &lt;ul>&lt;li>Este artículo va dedicado a todos los vídeos de monos en baja calidad, un saludo&lt;/li>&lt;/ul>
+            &lt;img src="https://media.tenor.com/WJHbS1BMW1UAAAAd/monkey.gif" alt="monkey" width="200px">
+                
+            &lt;footer>&lt;small>Esto es el pie del artículo&lt;/small>&lt;/footer>
+          &lt;/article>
+        &lt;/main>
+      &lt;/body>
+      &lt;/html>
+    </pre>
+  </main>
+</body>
+
+</html>
