@@ -21,7 +21,7 @@ pre {
 h1,
 h2,
 h3 {
-  font-family: Verdana;
+  font-family: Verdana<p>prueba de una fuente</p>;
   color: aqua;
 }
 
