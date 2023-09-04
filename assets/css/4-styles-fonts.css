@@ -1,0 +1,28 @@
+img {
+  display: block;
+  float: right;
+  padding: 5px 5px 5px 5px;
+  margin-right: 50px;
+  border: groove #000;
+  box-shadow: 5px 15px 20px rgba(20, 0, 0, 10);
+  border-radius: 100%;
+}
+
+pre {
+  display: block;
+  float: left;
+  color: wheat;
+  background-color: rgb(65, 48, 48);
+  text-shadow: 0 0 5px #C8C8C8;
+  padding-right: 20px;
+  width: fit-content;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 10px #000;
+  margin-left: 3%;
+  padding-top: 5px;
+}
+
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
