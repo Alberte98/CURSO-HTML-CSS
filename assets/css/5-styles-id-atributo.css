@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(25deg, 
+    #000,    /* Negro */
+    #9400D3, /* Violeta */
+    #0000FF, /* Azul */
+    #00FF00, /* Verde */
+    #FFFF00, /* Amarillo */
+    #FF7F00, /* Naranja */
+    #FF0000, /* Rojo */
+    #fff     /* Blanco */
+  );
+}
+
+pre {
+  color: wheat;
+  background: linear-gradient(45deg, #180000, #1a1c32, rgb(44, 44, 44));
+  /*background-color: rgb(65, 48, 48);*/
+  text-shadow: 0 0 5px #C8C8C8;
+  padding-right: 20px;
+  width: fit-content;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 10px #000;
+  margin-left: 3%;
+  padding-top: 5px;
+}
+
+img {
+  display: block;
+  float: right;
+  padding: 5px 5px 5px 5px;
+  margin-right: 50px;
+  border: groove #000;
+  box-shadow: 5px 15px 20px rgba(20, 0, 0, 10);
+  border-radius: 100%;
+}
+
+/*Ejemplos del ejercicio*/
+
+#ejemplo_id {
+  font-size: x-large;
+  color: darkgrey;
+  background-color: darkblue;
+  width: fit-content;
+}
+
+
+a[href="https://tenor.com/es/search/cat-meme-gifs"] {
+  color: rgb(255, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+/*Para cualquier cosa que contenga: "*=" */
+/*Para cualquier cosa que finalice: "$=" */
+/*Para cualquier cosa que comience: "^=" */
+a[href*="tenor"] {
+  color: rgb(5, 255, 101);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+a[href*="http"] {
+  color: rgb(5, 255, 101);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+
+[mi_attr="ok"] {
+  font-size: xx-large;
+  color: yellow;
+}

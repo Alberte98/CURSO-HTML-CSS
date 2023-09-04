@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/5-styles-id-atributo.css">
+  <title>Selector de ids y atributos en CSS</title>
+</head>
+
+<body>
+  <h1>selector de ids y atributos</h1>
+
+  <img src="https://media.tenor.com/gg_kphtCA6UAAAAd/cat-angry.gif" alt="gato culiao" width="30%">
+  <h2>Selector de ID</h2>
+  <p>En un documento HTML, los selectores de ID de CSS buscan un elemento basado en el contenido del atributo ID. El
+    atributo ID del elemento seleccionado debe coincidir exactamente con el valor dado en el selector.</p>
+
+  <p><strong>Ejemplo:</strong></p>
+
+  <p id="ejemplo_id">Esta es una linea de ejemplo para aplicación de selectores de ID</p>
+
+  <p><strong>CODIGO:</strong></p>
+  <pre>
+    --CSS
+    #ejemplo_id {
+      font-size: xx-large;
+      color: darkgrey;
+    }
+    
+    --HTML
+    &lt;p id="ejemplo_id">Esta es una linea de ejemplo con aplicación de selectores de ID&lt;/p>
+
+
+  </pre>
+
+  <h2>Selector de Atributos</h2>
+  <p>El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un atributo
+    determinado.</p>
+
+  <p><strong>Ejemplo:</strong></p>
+
+  <a href="https://tenor.com/es/search/cat-meme-gifs">Este es un enlace con un css de seleccion por atributo (href).</a>
+
+  <h4 mi_attr="ok">Título h4  con mi_attr="ok"</h4>
+
+  <a href="https://tenor.com/es/search/cat-meme-gifs">Este es un enlace con un css de seleccion por atributo (href).</a>
+
+  <pre>
+    --CSS
+    a[href] {
+      color: rgb(255, 0, 0);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    --HTML
+    &lt;a href="https://tenor.com/es/search/cat-meme-gifs">Página de los meme.</a>
+
+  </pre>
+
+
+
+</body>
+
+</html>
