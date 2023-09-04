@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores CSS</title>
+  <link rel="stylesheet" href="assets/css/2-styles-anidaciones.css">
+</head>
+
+<body>
+  <h1>Selectores CSS</h1>
+
+  <!--Selector universal-->
+  <img src="assets/img/cat-dancing-meme-dancing.gif" alt="" width="30%">
+  <h2>Selector universal</h2>
+
+  <p>Selecciona todos los elementos.</p>
+
+  <p>Opcionalmente, puede estar restringido a un espacio de nombres específico o a todos los espacios de nombres.</p>
+
+  <p><strong>Sintaxis:</strong> * ns|* *|*</p>
+
+  <p><strong>Ejemplo:</strong> * se aplicará a todos los elementos del documento.</p>
+  <h3>
+    <ul>
+      <li>Codigo CSS:</li>
+    </ul>
+  </h3>
+
+  <pre>
+    * {
+      font-style: italic;
+    }
+  </pre>
+
+  
+  <!--Selectores de tipo-->
+  <h2>Selectores de tipo</h2>
+
+  <p>Selecciona todos los elementos del tipo indicado.</p>
+
+  <p><strong>Sintaxis:</strong> eltname </p>
+
+  <p><strong>Ejemplo:</strong> h2 se aplicará a todos los elementos del documento.</p>
+
+  <h3>
+    <ul>
+      <li>Codigo CSS:</li>
+    </ul>
+  </h3>
+
+  <pre>
+    h2 {
+      font-style: normal;
+      color: aquamarine;
+    }
+  </pre>
+
+
+  <!--Selectores de clase-->
+  <h2>Selectores de clase</h2>
+
+  <p>Selecciona los elemento que tienen el atributo de clase especificado.</p>
+
+  <p><strong>Sintaxis:</strong> .clasename </p>
+
+  <p><strong>Ejemplo:</strong> .index sseleccionará cualquier elemento que tenga la clase .index</p>
+
+  <ul class="listas">
+    <li class="texto-marron">Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <ol class="texto-marron">
+    <li class="texto-marron fondo-negro">Elemento ABC</li>
+    <li>Elemento DEF</li>
+    <li>Elemento GHY</li>
+  </ol>
+
+
+  <h3 class="lista texto-marron">
+    <ul>
+      <li>Codigo CSS:</li>
+    </ul>
+  </h3>
+
+  <pre>
+    .lista {
+      color: lightgreen;
+    }
+
+    .texto-marron {
+      color: rgb(129, 77, 5);
+    }
+
+    .fondo-negro{
+      background-color: #000;
+      width:fit-content;
+    }
+    ...
+    &lt;li class="lista">Codigo CSS:&lt;/li>
+  </pre>
+
+  <!--Para cambiar el color del punto-->
+  
+  <ul class="texto-marron">
+    <li ><span class="fondo-negro texto-marron">Elemento 1</span></li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <pre>
+    
+    .listas {
+      color: chocolate;
+    }
+    
+    .texto-marron {
+      color: rgb(129, 77, 5);
+    }
+    
+    .fondo-negro{
+      background-color: #000;
+      width:fit-content;
+    }
+    ...
+    &lt;li >&lt;span class="fondo-negro texto-marron">Elemento 1&lt;/span>&lt;/li>
+    ...
+
+
+  </pre>
+
+</body>
+
+
+
+</html>

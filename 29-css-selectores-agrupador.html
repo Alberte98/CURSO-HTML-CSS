@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores agrupados</title>
+  <link rel="stylesheet" href="assets/css/3-styles-anidamientos.css">
+</head>
+
+<body>
+  <h1>Selectores agrupados en CSS</h1>
+
+  <p> <ul>
+    <li style="color: black;">Utilizamos selectores agrupados cuando queremos aplicar un estilo en particular a más de un selector</li>
+  </ul></p>
+
+  <!-- h2+h3+ol>li*3^ul>li*3 -->
+  <img src="https://media.tenor.com/tIs0vjSqRgIAAAAd/cat-kinkytwt.gif" alt="kinkytwt" width="25%">
+
+  <h2>Título modificado h2</h2>
+  <h3>Título modificado h3</h3>
+  <ol>
+    <li>Elementos A</li>
+    <li>Elementos B</li>
+  </ol>
+  <ul>
+    <li>Elementos 1</li>
+    <li>Elementos 2</li>
+  </ul>
+
+  <pre>
+    --CSS
+      h1,
+      h2,
+      h3 {
+        color: aqua;
+      }
+
+      ol, ul {
+        color: crimson;
+      }
+    --HTML
+
+    &lt;h2>Título modificado h2&lt;/h2>
+    &lt;h3>Título modificado h3&lt;/h3>
+    &lt;ol>
+      &lt;li>Elementos A&lt;/li>
+      &lt;li>Elementos B&lt;/li>
+    &lt;/ol>
+    &lt;ul>
+      &lt;li>Elementos 1&lt;/li>
+      &lt;li>Elementos 2&lt;/li>
+    &lt;/ul>
+
+
+  </pre>
+</body>
+
+</html>
