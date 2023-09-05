@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to bottom, #002fff, #abfff5);
+  height: 100%;
+  
+}
+
+main {
+  display: block;
+  float: left;
+}
+
+img {
+  width: 400px;
+}
+
+.border-rounded-20px {
+  border-radius: 20px ;
+
+}
+
+.border-rounded-50px {
+  border-radius: 50px ;
+
+}
+
+.border-rounded-100px {
+  border-radius: 100px ;
+
+}
+
+
+.border-rounded-200px {
+  border-radius: 200px ;
+
+}
+
+.border-rounded-25 {
+  border-radius: 25%;
+
+}
+
+.pentagon {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}

@@ -1,0 +1,81 @@
+/*
+→ Keyword values
+border-style: none;
+border-style: hidden;
+border-style: dotted;
+border-style: dashed;
+border-style: solid;
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;
+
+→ top and bottom | left and right 
+border-style: dotted solid;
+
+→ top | left and right | bottom
+border-style: hidden double dashed;
+
+→ top | right | bottom | left 
+border-style: none solid dotted dashed;
+
+→ Global values
+border-style: inherit;
+border-style: initial;
+border-style: revert;
+border-style: revert-layer;
+border-style: unset;
+*/
+
+body {
+  background: linear-gradient(to bottom, #002fff, #abfff5);
+  margin: 10%;
+  
+}
+
+main {
+  display: block;
+  float: left;
+}
+
+img {
+  width: 360px;  
+  height: 640px;
+}
+
+.gato_susto {
+  width: auto;
+  height: 640px;
+  border-width: 25px;
+  border-style: groove;
+  border-color: gold;
+  border-radius: 10%;
+
+}
+
+.gato_feliz {
+  width: auto; /*auto: Establece el tamaño de la dimensión manteniendo la proporción de la imagen original
+                 una vez especificado el nuevo tamaño en la otra dimensión*/
+  height: 550px;
+  border-width: 15px;
+  border-top-style: solid;
+  border-left-style: dotted;
+  border-right-style: dashed;
+  border-bottom-style: double ;
+
+  border-top-color: green;
+  border-left-color: purple;
+  border-right-color: yellow;
+  border-bottom-color:  blue;
+
+  border-radius: 70%;
+}
+
+
+.gato_sentado{
+  border-style: ridge;
+  border-color: magenta;
+  border-width: 15px;
+}
+
