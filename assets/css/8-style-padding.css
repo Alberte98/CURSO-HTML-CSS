@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(to right, #959d00, #ff0000, #959d00);
+}
+
+/*
+Padding: Distancia entre el elemento y su borde interior.
+
+Marging: Distancia entre el borde interior y el 
+borde del elemento que lo contiene
+*/
+
+div {
+  display: block;
+  float: left;
+  background-color: blue;
+  width: auto;
+  height: auto;
+  border: 3px solid rgb(255, 255, 255);
+  margin: 1%;
+}
+
+img {
+  /*padding-top: 15px;*/
+  /*padding-right: 15px;*/
+  /*padding-bottom: 15px;*/
+  /*padding-left: 15px;*/
+
+  /*       T   R   B   L  */
+  padding: 5px 10px 15px 20px;
+
+  width: 400px;
+  height: 250px;
+  background-color: green;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 6%;
+}
