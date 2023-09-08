@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/5.1-style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <ol>
+      <li>
+        <h2>Selector de atributo básico: [attr]</h2>
+        <p>
+          Este selector selecciona todos los elementos que tienen el atributo especificado, sin importar su valor. Aquí
+          tienes
+          un ejemplo:
+        </p>
+        <pre consola="True">
+          --html
+          &lt;a href="https://www.ejemplo.com">Enlace&lt;/a>
+          &lt;button disabled>Botón desactivado&lt;/button>
+          &lt;input type="text" id="nombre" value="John Doe">
+          
+          --CSS:
+          Copy code
+          /* Selecciona todos los elementos con el atributo "href" */
+          a[href] {
+            color: blue;
+          }
+          /* Selecciona todos los elementos con el atributo "disabled" */
+          [disabled] {
+            opacity: 0.5;
+          }
+          /* Selecciona todos los elementos con el atributo "id" */
+          [id] {
+            border: 1px solid gray;
+          }
+        </pre>
+        <p>
+          En este ejemplo, los estilos se aplicarán a todos los elementos que tengan el atributo especificado,
+          independientemente de su valor.
+        </p>
+      </li>
+      <li>
+        <h2>Selector de atributo con valor específico: [attr=valor]</h2>
+        <p>
+          Este selector selecciona elementos que tienen un atributo específico con un valor exacto. Aquí tienes un
+          ejemplo:
+        </p>
+        <pre consola="True">
+          --html
+          
+          &lt;input type="button" value="Enviar">
+          &lt;input type="text" placeholder="Introduce tu nombre">
+          &lt;a href="https://www.ejemplo.com">Enlace&lt;/a>
+  
+          --CSS:
+          
+          /* Selecciona el botón con el atributo "value" igual a "Enviar" */
+          input[type="button"][value="Enviar"] {
+            background-color: green;
+          }
+          /* Selecciona el enlace con el atributo "href" igual a "https://www.ejemplo.com" */
+          a[href="https://www.ejemplo.com"] {
+            text-decoration: underline;
+          }
+  
+        </pre>
+        <p>
+          En este caso, los estilos se aplican solo a los elementos que tienen el atributo especificado con el valor
+          exacto indicado.
+        </p>
+      </li>
+      <li>
+        <h2>Selector de atributo con valor parcial: [attr~=valor]</h2>
+        <p>
+          Este selector selecciona elementos cuyos atributos contienen un valor específico dentro de una lista de
+          valores
+          separados por espacios. Es útil para seleccionar elementos con atributos que contienen múltiples valores. Aquí
+          tienes un ejemplo:
+        </p>
+        <pre consola="True">
+
+          --html
+
+          &lt;div class="etiquetas">HTML CSS JavaScript&lt;/div>
+          &lt;span class="colores">Rojo Verde Azul&lt;/span>
+          
+          --CSS:
+
+          /* Selecciona las etiquetas con atributo "class" que contienen la palabra "CSS" */
+          [class~="CSS"] {
+            font-weight: bold;
+          }
+          /* Selecciona los elementos con atributo "class" que contienen la palabra "Verde" */
+            [class~="Verde"] {
+            color: green;
+          }
+        </pre>
+        <p>
+          En este caso, los estilos se aplicarán a elementos cuyos atributos contengan el valor específico dentro de una
+          lista de valores separados por espacios.
+        </p>
+      </li>
+      <li>
+        <h2>Selector de atributo que comienza con cierto valor: [attr|=valor]</h2>
+        <p>
+          Este selector selecciona elementos cuyos atributos comienzan con un valor específico, seguido de un guion (-)
+          o
+          seguido de nada. Es útil para seleccionar elementos basados en prefijos de atributos, como idiomas en
+          atributos
+          "lang". Aquí tienes un ejemplo:
+        </p>
+
+        <pre consola="True">
+        --HTML:
+        
+        &lt;p lang="es-ES">Este es un párrafo en español.&lt;/p>
+        &lt;p lang="en-US">This is a paragraph in English.&lt;/p>
+        
+        --CSS:
+  
+          /* Selecciona los elementos con atributo "lang" que comienza con "es" */
+          [lang|="es"] {
+            font-weight: bold;
+          }
+          /* Selecciona los elementos con atributo "lang" que comienza con "en" */
+            [lang|="en"] {
+            font-style: italic;
+          }
+        </pre>
+        <p>
+          En este ejemplo, los estilos se aplicarán a elementos cuyos atributos comiencen con el valor especificado,
+          seguido de un guion (-) o seguido de nada.
+        </p>
+      </li>
+    </ol>
+    <ul>
+      <li>
+        <h2>Situaciones en las que son útiles:</h2>
+        <p>
+          <strong>Validación de formularios</strong>: Puedes utilizar selectores de atributo para resaltar campos de
+          formulario con errores o aplicar estilos a campos requeridos.
+        </p>
+
+        <p>
+          <strong>Estilización específica</strong>: Los selectores de atributo te permiten aplicar estilos a elementos
+          específicos sin necesidad de agregar clases o IDs adicionales.
+        </p>
+
+        <p>
+          <strong>Selección de enlaces externos</strong>: Puedes aplicar estilos a enlaces que apuntan a sitios externos
+          utilizando [href^="http"].
+        </p>
+
+        <p>
+          <strong>Selección de elementos basados en idioma</strong>: Puedes aplicar estilos diferentes a partes de tu
+          página web basadas en el atributo "lang" para ofrecer una experiencia de usuario más personalizada.
+        </p>
+      </li>
+      <li>
+
+        <h2>Compatibilidad con navegadores:</h2>
+        <p>
+          Los selectores de atributo son compatibles con la mayoría de los navegadores modernos, incluyendo Chrome,
+          Firefox, Safari y Edge. Sin embargo, es importante realizar pruebas en diferentes navegadores para garantizar
+          la
+          compatibilidad total.
+        </p>
+      </li>
+      <li>
+
+        <h2>Mejora de la eficiencia y la versatilidad del diseño web:</h2>
+        <p>
+          Los selectores de atributo en CSS son herramientas poderosas que mejoran la eficiencia al permitirte aplicar
+          estilos de manera más específica sin necesidad de modificar la estructura HTML. También aumentan la
+          versatilidad
+          al permitirte seleccionar elementos de manera dinámica en función de los atributos y valores de los elementos.
+          Esto facilita la creación de diseños web más flexibles y mantenibles.
+        </p>
+      </li>
+    </ul>
+    <h1>Ejercicio de selectores de atributo css</h1>
+    <div my-bool="True">
+      <p my-bool="True">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus ratione expedita id
+        et numquam dolor odit, temporibus nobis minus odio sequi minima pariatur excepturi dicta molestiae eum, non
+        quos?
+        Sunt, vitae labore eius nemo amet totam molestiae quisquam maxime quidem unde, ratione quaerat nobis? Culpa
+        fugiat nemo quas temporibus excepturi quis dolorem magnam expedita repellendus! Aspernatur dolorem voluptas
+        saepe.
+        Debitis id consectetur iusto molestias harum, exercitationem voluptas quam aliquam perferendis ut quasi deserunt
+        accusantium nam repellendus expedita atque enim? Quos fugit minus nulla officia eum illo porro voluptates
+        fugiat.</p>
+      <p my-bool="False">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus ratione expedita id
+        et numquam dolor odit, temporibus nobis minus odio sequi minima pariatur excepturi dicta molestiae eum, non
+        quos?
+        Sunt, vitae labore eius nemo amet totam molestiae quisquam maxime quidem unde, ratione quaerat nobis? Culpa
+        fugiat nemo quas temporibus excepturi quis dolorem magnam expedita repellendus! Aspernatur dolorem voluptas
+        saepe.
+        Debitis id consectetur iusto molestias harum, exercitationem voluptas quam aliquam perferendis ut quasi deserunt
+        accusantium nam repellendus expedita atque enim? Quos fugit minus nulla officia eum illo porro voluptates
+        fugiat.</p>
+      <p my-bool="True">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus ratione expedita id
+        et numquam dolor odit, temporibus nobis minus odio sequi minima pariatur excepturi dicta molestiae eum, non
+        quos?
+        Sunt, vitae labore eius nemo amet totam molestiae quisquam maxime quidem unde, ratione quaerat nobis? Culpa
+        fugiat nemo quas temporibus excepturi quis dolorem magnam expedita repellendus! Aspernatur dolorem voluptas
+        saepe.
+        Debitis id consectetur iusto molestias harum, exercitationem voluptas quam aliquam perferendis ut quasi deserunt
+        accusantium nam repellendus expedita atque enim? Quos fugit minus nulla officia eum illo porro voluptates
+        fugiat.</p>
+      <p my-bool="False">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus ratione expedita id
+        et numquam dolor odit, temporibus nobis minus odio sequi minima pariatur excepturi dicta molestiae eum, non
+        quos?
+        Sunt, vitae labore eius nemo amet totam molestiae quisquam maxime quidem unde, ratione quaerat nobis? Culpa
+        fugiat nemo quas temporibus excepturi quis dolorem magnam expedita repellendus! Aspernatur dolorem voluptas
+        saepe.
+        Debitis id consectetur iusto molestias harum, exercitationem voluptas quam aliquam perferendis ut quasi deserunt
+        accusantium nam repellendus expedita atque enim? Quos fugit minus nulla officia eum illo porro voluptates
+        fugiat.</p>
+      <p my-bool="Non-che-sei">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus ratione
+        expedita id
+        et numquam dolor odit, temporibus nobis minus odio sequi minima pariatur excepturi dicta molestiae eum, non
+        quos?
+        Sunt, vitae labore eius nemo amet totam molestiae quisquam maxime quidem unde, ratione quaerat nobis? Culpa
+        fugiat nemo quas temporibus excepturi quis dolorem magnam expedita repellendus! Aspernatur dolorem voluptas
+        saepe.
+        Debitis id consectetur iusto molestias harum, exercitationem voluptas quam aliquam perferendis ut quasi deserunt
+        accusantium nam repellendus expedita atque enim? Quos fugit minus nulla officia eum illo porro voluptates
+        fugiat.</p>
+    </div>
+  </main>
+
+</body>
+
+</html>

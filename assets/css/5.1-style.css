@@ -1,0 +1,25 @@
+div[my-bool="True"] {
+  color: blue;
+  padding: 3%;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+  border: 3px solid black;
+  border-radius: 20%;
+}
+
+[my-bool="True"] {
+  color: green;
+}
+
+  
+[my-bool="False"] {
+  color: red;
+}
+
+pre[consola="True"] {
+  padding-top: 15px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px  1px inset black;
+  background: radial-gradient(closest-side, #ffffff, #b4b4b4, #5c5c5c);
+  
+}
