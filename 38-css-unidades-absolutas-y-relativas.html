@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/10-style-absoluto-relativo.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Unidades absolutas y relativas en CSS</h1>
+
+  <!--
+    El attr relhtml no requier un valor, sin embargo es recomendable asigrnar un true o false
+  -->
+
+  <p relhtml="True">Párrafo en &lt;html> con fuente y tamaño predeterminado</p>
+
+  <p relhtml="True" class="courier">Párrafo en &lt;html> con fuente courier new y tamaño predeterminado</p>
+
+  <p class="em2" relhtml="True">Párrafo en &lt;html> con fuente y tamaño 2em</p>
+
+  <div class="courier">
+    <p relhtml="True">Párrafo en &lt;div> con Courier New 20 px </p>
+    <p class="em2">Párrafo en &lt;div> con Courier New 2 ex </p>
+
+    <ul>
+      <li>Uno, con tamaño y letra de &lt;ul> → 10px</li>
+      <li class="em2">DOs, con tamaño 2em, es decir, dos veces el tamaño del contenedor, en este caso &lt;ul></li>
+      <li class="rem2" relhtml="True">TREs, con tamaño 2rem , es decir, dos veces el tamaño del elemento raíz, en este
+        caso es &lt;html>
+        <p>Observa que el tamaño SI es el doble del tamaño del elemento raíz</p>
+      </li>
+    </ul>
+
+    <p relhtml="True">Todos los elementos relativos mostrados con este estilo, son relativos a las etiqueta HTML y
+      consecuentemente con el tamaño de letra predeterminado y con el tamaño de letra del contenedor raiz <br>
+    </p>
+  </div>
+
+</body>
+
+</html>

@@ -1,25 +1,122 @@
-div[my-bool="True"] {
-  color: blue;
-  padding: 3%;
-  background: radial-gradient(ellipse at top, #e66465, transparent),
-            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-  border: 3px solid black;
-  border-radius: 20%;
+/* styles.css */
+
+/* Estilo para el encabezado principal */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
 }
 
-[my-bool="True"] {
+/* Estilo para las listas */
+ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* Estilo para los enlaces */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Estilo para los botones desactivados */
+[disabled] {
+  opacity: 0.5;
+}
+
+/* Estilo para los elementos con atributo "id" */
+[id] {
+  border: 1px solid gray;
+}
+
+/* Estilo para el botón con el atributo "value" igual a "Enviar" */
+input[type="button"][value="Enviar"] {
+  background-color: green;
+}
+
+/* Estilo para el enlace con el atributo "href" igual a "https://www.ejemplo.com" */
+a[href="https://www.ejemplo.com"] {
+  text-decoration: underline;
+}
+
+/* Estilo para las etiquetas con atributo "class" que contienen la palabra "CSS" */
+[class~="CSS"] {
+  font-weight: bold;
+}
+
+/* Estilo para los elementos con atributo "class" que contienen la palabra "Verde" */
+[class~="Verde"] {
   color: green;
 }
 
-  
-[my-bool="False"] {
+/* Estilo para los elementos con atributo "lang" que comienza con "es" */
+[lang|="es"] {
+  font-weight: bold;
+}
+
+/* Estilo para los elementos con atributo "lang" que comienza con "en" */
+[lang|="en"] {
+  font-style: italic;
+}
+
+/* Estilo para los párrafos con atributo "my-bool" igual a "True" */
+p[my-bool="True"] {
+  font-weight: bold;
+  color: green;
+}
+
+/* Estilo para los párrafos con atributo "my-bool" igual a "False" */
+p[my-bool="False"] {
+  font-style: italic;
   color: red;
 }
+
+/* Cambio del fondo del body a un radial gradient anaranjado */
+body {
+  background: url(https://c4.wallpaperflare.com/wallpaper/860/881/255/amoled-dragon-phone-iphone-vertical-hd-wallpaper-preview.jpg);
+  background-size: cover;
+}
+
+/* Aplicar un ancho del 80% y un fondo degradado */
+div {
+  width: 80%;
+  background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57);
+  /* Puedes ajustar los colores aquí */
+  border: 3px solid #000;
+  /* Borde sólido de 3 píxeles en color negro */
+  margin: 0 auto;
+  /* Centra el div horizontalmente en su contenedor */
+  padding: 10px;
+  /* Añade un espacio interno de 10 píxeles para separar el contenido del borde */
+  box-sizing: border-box;
+  /* Incluye el borde en el ancho total del div */
+  ;
+}
+
 
 pre[consola="True"] {
   padding-top: 15px;
   border: 2px solid black;
-  box-shadow: 0px 0px 10px  1px inset black;
+  box-shadow: 0px 0px 10px 1px inset black;
   background: radial-gradient(closest-side, #ffffff, #b4b4b4, #5c5c5c);
-  
+  max-width: fit-content;
+  padding-right: 2%;
+  border-radius: 30px;
+}
+
+li {
+  border: 2px solid black;
+  margin: 3%;
+  padding: 2.5em;
 }
