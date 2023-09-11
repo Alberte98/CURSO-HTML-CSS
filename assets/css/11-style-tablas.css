@@ -1,0 +1,11 @@
+body {
+  width: 50vw;
+}
+
+table {
+  border: 1px ;
+  border-style: solid;
+  border-color:  black;
+  background-color: aquamarine;
+}
+  
