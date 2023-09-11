@@ -9,78 +9,123 @@
 </head>
 
 <body>
-  <h1>Prioridades en CSS</h1>
+  <main>
 
-  <!--TIPO vs TIPO-->
-  <h2>Selectores del mismo tipo con prioridades en conflicto</h2>
-
-  <p>La aplicación de css dependerá del orden en el archivo CSS</p>
-  <p>Normalmente el último selector en aparecer en el css será el apicado.</p>
-  <div class="fondo-gris fondo-amarillo">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
-      At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
-  </div>
-
-  <!--TIPO vs CLASE-->
-  <hr>
-  <h2>Selectores de tipo vs clase</h2>
-
-  <p>Al ser el selector de clase más espectífico que el selector de tipo, se aplica el estilo de clase.</p>
-
-  <div>
-    <p class="texto-verde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
-      At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
-  </div>
-
-  <pre>
-    div {
-      color: blue;
-    }
-    
-    p {
-      color: black;
-    }
-    
-    .texto-verde {
-      color: green;
-    }
-    
-  </pre>
-
-  <!--ID vs CLASE-->
-  <hr>
-  <h2>Selectores de ID vs clase</h2>
-  <p>
-    Al ser el selector de ID más espectífico que el selector de clase, se aplicará el selector de ID
-  </p>
-  <p><strong>NOTA:</strong></p>
-  <p>Es posible que se defina un selector de clase y un selector de ID con el mismo nombre.</p>
-  <p>No es muy recomendable seguir esta práctica!</p>
-
-  <pre>
-
+    <h1>Prioridades en CSS</h1>
+    <!--TIPO vs TIPO-->
+    <h2>Selectores del mismo tipo con prioridades en conflicto</h2>
+    <p>La aplicación de css dependerá del orden en el archivo CSS</p>
+    <p>Normalmente el último selector en aparecer en el css será el apicado.</p>
+    <div class="fondo-gris fondo-amarillo">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+        At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+    </div>
+    <pre>
+      --CSS
     .fondo-gris {
       background-color: grey;
     }
-        
-    ...
-
-    /*Selector de ID, no conflico con nombre de selector de clase (no conveniente)*/
-    #fondo-gris {
-      background-color: grey;
+    .fondo-amarillo {
+      background-color: yellow;
     }
-  </pre>
-
-  </p>
-
-  <div id="bg-pink" class="fondo-amarillo">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus. At earum voluptatem
-      quae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
-  </div>
-
-  <!--  -->
-
-
+    --HTML
+    &lt;div class="fondo-gris fondo-amarillo">
+      &lt;p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+        At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! &lt;/p>
+    &lt;/div>
+    </pre>
+    <!--TIPO vs CLASE-->
+    <hr>
+    <h2>Selectores de tipo vs clase</h2>
+    <p>Al ser el selector de clase más espectífico que el selector de tipo, se aplica el estilo de clase.</p>
+    <div>
+      <p class="texto-verde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+        At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+    </div>
+    <pre>
+      --CSS
+      div {
+        color: blue;
+      }
+    
+      p {
+        color: black;
+      }
+    
+      .texto-verde {
+        color: green;
+      }
+      --HTML
+      &lt;div>
+        &lt;p class="texto-verde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+          At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! &lt;/p>
+      &lt;/div>
+    
+    </pre>
+    <!--ID vs CLASE-->
+    <hr>
+    <h2>Selectores de ID vs clase</h2>
+    <p>
+      Al ser el selector de ID más espectífico que el selector de clase, se aplicará el selector de ID
+    </p>
+    <p><strong>NOTA:</strong></p>
+    <p>Es posible que se defina un selector de clase y un selector de ID con el mismo nombre.</p>
+    <p>No es muy recomendable seguir esta práctica!</p>
+    </p>
+    <div id="bg-pink" class="fondo-amarillo">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus. At earum voluptatem
+        quae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+    </div>
+    <pre>
+        --CSS
+    
+        .fondo-gris {
+          background-color: grey;
+        }
+    
+        ...
+    
+        /*Selector de ID, no conflico con nombre de selector de clase (no conveniente)*/
+    
+        #fondo-gris {
+          background-color: grey;
+        }
+    
+        --HTML
+    
+        &lt;div id="bg-pink" class="fondo-amarillo">
+          &lt;p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus. At earum voluptatem
+            quae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! &lt;/p>
+        &lt;/div>
+    
+      </pre>
+    <!-- ID vs CLASS vs ATTR -->
+    <hr>
+    <h2>Selector de ID vs selector de CLASS vs selector de ATTR</h2>
+    <p>Se aplicará el estilo del ID por su prioridad sobre la clase y el atributo</p>
+    <p></p>
+    <div>
+      <a id="google" class="texto-azul" href="http://google.com" target="_blank" rel="noopener noreferrer">google</a>
+    </div>
+    <pre>
+      --CSS
+      #google {
+        color: crimson;
+      }
+    
+      .texto-azul {
+        color: blue;
+      }
+    
+      [target="_blank"] {
+        color: violet;
+      }
+      --HTML
+      &lt;div>
+        &lt;a id="google" class="texto-azul" href="http://google.com" target="_blank" rel="noopener noreferrer">google&lt;/a>
+      &lt;/div>
+    </pre>
+  </main>
 
 </body>
 
