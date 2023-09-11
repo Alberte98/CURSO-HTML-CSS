@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/12-style-prioridad.css">
+</head>
+
+<body>
+  <h1>Prioridades en CSS</h1>
+
+  <!--TIPO vs TIPO-->
+  <h2>Selectores del mismo tipo con prioridades en conflicto</h2>
+
+  <p>La aplicación de css dependerá del orden en el archivo CSS</p>
+  <p>Normalmente el último selector en aparecer en el css será el apicado.</p>
+  <div class="fondo-gris fondo-amarillo">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+      At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+  </div>
+
+  <!--TIPO vs CLASE-->
+  <hr>
+  <h2>Selectores de tipo vs clase</h2>
+
+  <p>Al ser el selector de clase más espectífico que el selector de tipo, se aplica el estilo de clase.</p>
+
+  <div>
+    <p class="texto-verde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus.
+      At earum volup tatemquae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+  </div>
+
+  <pre>
+    div {
+      color: blue;
+    }
+    
+    p {
+      color: black;
+    }
+    
+    .texto-verde {
+      color: green;
+    }
+    
+  </pre>
+
+  <!--ID vs CLASE-->
+  <hr>
+  <h2>Selectores de ID vs clase</h2>
+  <p>
+    Al ser el selector de ID más espectífico que el selector de clase, se aplicará el selector de ID
+  </p>
+  <p><strong>NOTA:</strong></p>
+  <p>Es posible que se defina un selector de clase y un selector de ID con el mismo nombre.</p>
+  <p>No es muy recomendable seguir esta práctica!</p>
+
+  <pre>
+
+    .fondo-gris {
+      background-color: grey;
+    }
+        
+    ...
+
+    /*Selector de ID, no conflico con nombre de selector de clase (no conveniente)*/
+    #fondo-gris {
+      background-color: grey;
+    }
+  </pre>
+
+  </p>
+
+  <div id="bg-pink" class="fondo-amarillo">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste nulla explicabo rerum minus. At earum voluptatem
+      quae animi quia a ut eum obcaecati? Eaque ipsam enim, et delectus ipsum soluta! </p>
+  </div>
+
+  <!--  -->
+
+
+
+</body>
+
+</html>

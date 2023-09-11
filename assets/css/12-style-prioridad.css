@@ -1,0 +1,38 @@
+
+/*Selectores del mismo tipo con propiedades en conflicto*/
+
+.fondo-gris {
+  background-color: grey;
+}
+
+.fondo-amarillo {
+  background-color: yellow;
+}
+
+/* Selectores de tipo vs clase*/
+div {
+  color: blue;
+}
+
+p {
+  color: black;
+}
+
+.texto-verde {
+  color: green;
+}
+
+
+
+
+/*Selector de ID, no conflico con nombre de selector de clase (no conveniente)*/
+/*
+.fondo-amarillo {
+  background-color: yellow;
+}
+*/
+
+
+#bg-pink {
+  background-color: pink;
+}
