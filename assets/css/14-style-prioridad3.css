@@ -10,11 +10,12 @@ pre {
   margin: 2%;
   padding: 10px 60px 10px 10px;
   border-radius: 30px;
+  opacity: 90%;
 }
 
 /*42-prioridad2*/
 
 ul { 
-  color: purple !important;
+  color: #800080 !important;
 
 }
