@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "BlackOpsOne-Regular" ;
+  src: url(/assets/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf) format("truetype");
+}
+
+body {
+  background: url(/assets/img/john-lee-oMneOBYhJxY-unsplash.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "BlackOpsOne-Regular";
+  font-size: 60px;
+  text-align: center;
+}
+
+#solido {
+  position: absolute;
+  width: 626px;
+  z-index: 1;
+  background-color: #00ff0084;
+  margin: 100px 0 0px 0;
+}
+
+.transparente {
+  position: absolute;
+  width: 626px;
+  z-index: 1;
+  background-color: #ffff00b2;
+  margin: -150px 0 0 0;
+
+}
+
+.contenedor {
+  position: absolute;
+  margin: 0 0 0 20px;
+}
+
+img {
+  border: 2px solid black;
+  background-color: red;
+  position: relative;
+  display: block;
+  z-index: -1;
+  margin: 0 0 0 0;
+}
+
+.lotro {
+  float: right;
+  border: 2px solid black;
+  margin: 0 50px 0 0;
+  padding: 15px;
+  box-shadow: 0 0 6px inset black;
+  background: radial-gradient(closest-side, #9a41023d, #9a41028c, #e16308);
+  border-radius: 20px;
+}
