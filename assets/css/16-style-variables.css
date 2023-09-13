@@ -1,18 +1,25 @@
+@font-face {
+  font-family: "BlackOps";
+  src: url(/assets/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf) format('truetype');
+}
+
 /*Variables  Globales*/
 /*No es necesario llamarlas en la clase :root, siempre que se apliquen a un 
 id, clase, atributo... se le aplicara su contenido*/
 /*Su nombre ha de ser root*/
 :root {
-  --margen: 100px
+  --margen: 30px
 }
 
 
 
-/*BEGIN Variables contextuales, en contexto definido o --locales--*/
-/*Es necesario que el elemento al que se aplicara la variable o su alguno superior
-contenga la clase "tool-box" en este caso, la que contiene la definición de las 
- variables.*/
-.tool-box { 
+/*BEGIN */
+/*Variables contextuales, en contexto definido o --locales--
+    Es necesario que el elemento al que se aplicara la variable o su alguno superior
+    contenga la clase "tool-box" en este caso, la que contiene la definición de las 
+    variables.
+*/
+.tool-box {
   --rojo: #ff0000;
   --verde: #00ff00;
   --azul: rgb(0, 0, 255);
@@ -22,29 +29,85 @@ contenga la clase "tool-box" en este caso, la que contiene la definición de las
   --mediano: 40px;
   --grande: 60px;
 }
+
 /*END*/
 
 
+
 #rojo-grande {
-  color: var(--rojo, violet); /*Variable local*/
-  font-size: var(--grande); 
+  color: var(--rojo, violet);
+  /*Variable local*/
+  font-size: var(--grande);
 }
 
 .verde-mediano {
-  color: var(--verde, violet); /*Variable local*/
-  font-size: var(--mediano); 
+  color: var(--verde, violet);
+  /*Variable local*/
+  font-size: var(--mediano);
 }
 
 [att="azul-pequeño"] {
-  color: var(--azul, violet); /*Variable local*/
-  font-size: var(--pequeno); 
+  color: var(--azul, violet);
+  /*Variable local*/
+  font-size: var(--pequeno);
 }
 
 li {
-  color: var(--chocolate, violet);  /*Variable local*/
+  color: var(--chocolate, violet);
+  /*Variable local*/
 }
 
 ul {
-  margin-left: var(--margen); /*Variable global*/
+  margin-left: var(--margen);
+  /*Variable global*/
 
 }
+
+.formato-estandar {
+  --color-letra: rgb(255, 255, 255);
+  --color-fondo: #000000af;
+  --sombra-texto: 0 0 2px #C8C8C8;
+  --bordes: 2px solid #000;
+  --sombra-bordes: 0px 0px 50px inset #8a8a8a;
+  --ancho-maximo: 60%;
+
+  
+}
+
+main {
+  max-width: var(--ancho-maximo);
+  border: var(--bordes);
+  border-radius: 30px;
+  padding: 30px 60px 20px 40px;
+  margin: 4%;
+  background: -webkit-repeating-radial-gradient(center, circle, white, rgb(3, 136, 132) 50%, #08a37a 70%, #197200 100%);
+  opacity: 70%;
+}
+
+
+pre {
+  color: var(--color-letra);
+  background-color: var(--color-fondo);
+  text-shadow: var(--sombra-texto);
+  border: var(--bordes);
+  box-shadow: var(--sombra-bordes);
+  padding: 30px 60px 20px 10px;
+  margin: 2%;
+  border-radius: 30px;
+  opacity: 90%;
+  width: fit-content;
+  min-width: 400px;
+}
+
+body {
+  background: url(https://c0.wallpaperflare.com/path/510/295/727/green-plant-fern-forest-1ffc98117ed836f4f4c7a2b58308fe19.jpg);
+  background-size: contain;
+  font-family: "BlackOps", Arial, Helvetica, sans-serif;
+}
+
+.contenedor-ejemplo {
+  border: var(--bordes);
+  box-shadow: var(--sombra-bordes);
+  padding: 3%;
+}
+
