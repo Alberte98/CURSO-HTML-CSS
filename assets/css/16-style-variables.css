@@ -1,29 +1,50 @@
-.paleta-color {
-  --rojo: #ff0000;
-  --verde: #00ff00;
-  --azul: #0000ff;
-  --chocolate: #955715;
-
-  --pequeno: 40px;
-  --mediano: 80px;
-  --grande: 120px;
+/*Variables  Globales*/
+/*No es necesario llamarlas en la clase :root, siempre que se apliquen a un 
+id, clase, atributo... se le aplicara su contenido*/
+/*Su nombre ha de ser root*/
+:root {
+  --margen: 100px
 }
 
-/*
-#rojo-grande {
 
+
+/*BEGIN Variables contextuales, en contexto definido o --locales--*/
+/*Es necesario que el elemento al que se aplicara la variable o su alguno superior
+contenga la clase "tool-box" en este caso, la que contiene la definición de las 
+ variables.*/
+.tool-box { 
+  --rojo: #ff0000;
+  --verde: #00ff00;
+  --azul: rgb(0, 0, 255);
+  --chocolate: #955715;
+
+  --pequeno: 20px;
+  --mediano: 40px;
+  --grande: 60px;
+}
+/*END*/
+
+
+#rojo-grande {
+  color: var(--rojo, violet); /*Variable local*/
+  font-size: var(--grande); 
 }
 
 .verde-mediano {
-
+  color: var(--verde, violet); /*Variable local*/
+  font-size: var(--mediano); 
 }
-*/
 
-[azul-pequeño] {
-  color: var(azul);
-  font-size: var(pequeno);
+[att="azul-pequeño"] {
+  color: var(--azul, violet); /*Variable local*/
+  font-size: var(--pequeno); 
 }
 
 li {
-  color: var(chocolate);
+  color: var(--chocolate, violet);  /*Variable local*/
+}
+
+ul {
+  margin-left: var(--margen); /*Variable global*/
+
 }
